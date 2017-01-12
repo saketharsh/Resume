@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Saket}{Harsh}{ \urlstyle{same}\url{http://saketharsh.wordpress.com} \\
+{Address- Room No 257 Hall 3 IIT Kanpur PIN -208016} \\
+\href{mailto:sharsh@iitk.ac.in.edu}{sharsh@iitk.ac.in} | (+91)7755 042 551
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIT Kanpur}
+\descript{4 Yr B.S in Mathematics \& Sc. Computing}
+\location{2015-2019(Expected) \\ Cumulative. GPA: 7.8/10}
+\sectionsep
+
+\subsection{AISSCE(CBSE Class 12th)}
+\descript{Delhi Public School}
+\location{Sail Township, Ranchi, Jharkhand}
+\location{ Percentage- 95.8\% 
+}
+\sectionsep
+
+\subsection{AISSE(CBSE Class 10th)}
+\descript{Oxford Public School,Ranchi}
+\sectionsep{ CGPA- 10/10}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C \textbullet{}   C++ \textbullet{} Python \textbullet{} Matlab \\
+\textbullet{} Shell Scripting  \textbullet{} HTML \\ 
+\subsection{Operating Systems}
+Linux(Ubuntu) \textbullet{} Fedora \textbullet{} Arch Linux \\
+\textbullet{} Windows  
+\subsection{Utilities}
+Vim \textbullet{} Git \textbullet{} \LaTeX
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Ongoing}
+Probability and Statistics \\
+Mathematical Logic \\
+Ordinary Differential Equations \\
+
+
+\sectionsep
+
+\subsection{Completed}
+Introduction to Computing \\
+Abstract Algebra\\
+Real Analysis \\
+Numerical Methods Of Computation \\
+Linear Algebra \\
+Introduction to Calculus
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Links
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/saketharsh}{\custombold{saketharsh}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/saket-harsh-iitk}{\custombold{saket-harsh-iitk}} \\
+Quora://  \href{https://www.quora.com/Saket-Harsh}{\custombold{Saket-Harsh}}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project}
+
+\runsubsection{Machine Learning}
+\descript{| Programming Club, IIT Kanpur }
+\location{May 2016-July 2016 | IIT Kanpur}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Studied about different Machine learning techniques and implemented a Neural Network based Machine Learning Algorithm to predict the closing Stocks of various MNC's. 
+\item Collected dataset of various MNC's of about an year to train a 4*70*50*1 neural network for the Desired output. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{RmSearch}
+\descript{| Self Undertaken Project }
+\location{Dec 2016 }
+\begin{tightemize}
+\item Wrote a script in Pyhton and Shell to search for any .mp3 file in the Computer and Play it using command line VLC.
+\item Script able to recognize Mp3 songs even by incomplete names(upto an extent).
+\item Github:// \href{https://github.com/saketharsh/RmSearch}{\custombold{saketharsh/RmSearch}} \\
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Mechanical Elevator}
+\descript{| Technical Arts Course Project, }
+\location{3rd Semester, Prof. Rajiv Shekhar }
+\begin{tightemize}
+\item Learnt basic techniques of working with metals(Brazing,Welding,Casting).
+\item Implemented the techniques to build a Mechanical Elevator that can lift Objects which are elleptic in nature to large heights by mechanical forces only. 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Scholastic Achievement} 
+\begin{tabular}{rll}
+2015	     & AIR 35  & SCRA(Special Class Railway Apprentice) organised by UPSC\\
+2015	     & AIR 768  & JEE Main 2015 organised by CBSE \\
+2015	     & Top 1\% student  & NSEP(National Standard Examination in Physics)\\
+2013	     & State Rank 3 & I.T Talent Search Examination, Jharkhand State\\
+\end{tabular}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Position of Responsibility}
+\runsubsection{Programming Club IITK}
+\descript{| Secretary}
+\location{Jun 2016 – Present | Kanpur}
+Currently working with a passionate and hardworking team of Computer Enthusiasts within the campus to organise Programming related activities, and involved in differnt programming events taking place within the Campus.
+\sectionsep
+
+\runsubsection{Counselling Service, IIT Kanpur}
+\descript{| Student Guide}
+\location{June 2016}
+Selected for the post of Student Guide , to guide six incoming students for smooth transition into their lives away from home and to help them int their lives at IIT Kanpur.
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Interests} 
+Competitive Programming, Open Source Contribution, Machine Learning and Linux are the words that can describe my interests in all.
+
+
+
+\sectionsep
+
+\end{minipage} 
+\end{document}
